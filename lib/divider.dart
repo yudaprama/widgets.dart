@@ -1,8 +1,9 @@
-library widgets;
-
 import 'package:flutter/material.dart';
 
-const dividerIndent = const Divider(height: 0.0, indent: 16.0,);
+const dividerIndent = const Divider(
+  height: 0.0,
+  indent: 16.0,
+);
 const divider0 = const Divider(height: 0.0);
 
 const sizeBox25 = const SizedBox(height: 25);
