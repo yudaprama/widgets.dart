@@ -1,3 +1,7 @@
+## [0.0.4] - TODO: Add release date.
+
+* add delegate.
+
 ## [0.0.3] - TODO: Add release date.
 
 * add raisedbuttonwithloader.
