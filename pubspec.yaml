@@ -1,7 +1,6 @@
 name: widgets
 description: A new Flutter package.
-version: 0.0.4
-author: Yuda Prama <yudapramad@gmail.com>
+version: 1.0.0
 homepage: https://github.com/yudaprama/widgets.dart
 
 environment:
