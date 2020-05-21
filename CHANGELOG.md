@@ -1,6 +1,7 @@
 ## [1.1.0] - TODO: Add release date.
 
 * add ErrorMessageView.
+* add DataNotFoundView.
 
 ## [1.0.0] - TODO: Add release date.
 

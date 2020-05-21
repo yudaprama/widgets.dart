@@ -79,3 +79,45 @@ class ErrorMessageView extends StatelessWidget {
 			);
 	}
 }
+
+class DataNotFoundView extends StatelessWidget {
+	final String message;
+	final String title;
+
+	const DataNotFoundView({
+		Key key,
+		this.message = 'No data',
+		this.title = 'Data Not Found',
+	}) : super(key: key);
+
+	@override
+	Widget build(BuildContext context) {
+		return Center(
+			child: Padding(
+				padding: const EdgeInsets.symmetric(horizontal: 16.0),
+				child: Column(
+					mainAxisAlignment: MainAxisAlignment.center,
+					crossAxisAlignment: CrossAxisAlignment.center,
+					children: <Widget>[
+						sizeBox10,
+						Icon(
+							Icons.error,
+							size: 48,
+						),
+						sizeBox10,
+						Text(
+							title,
+							style: Theme.of(context).textTheme.headline6,
+							textAlign: TextAlign.center,
+						),
+						sizeBox5,
+						Text(
+							message,
+							textAlign: TextAlign.center,
+						),
+					],
+				),
+			),
+		);
+	}
+}
