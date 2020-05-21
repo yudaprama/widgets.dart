@@ -224,6 +224,7 @@ class ListViewSeparated extends StatelessWidget {
 	final int itemCount;
 	final ScrollController controller;
 	final Widget separator;
+  final ScrollPhysics physics;
 
   const ListViewSeparated({
 	  Key key,
@@ -231,6 +232,7 @@ class ListViewSeparated extends StatelessWidget {
 	  @required this.itemCount,
 	  this.controller,
 	  this.separator = dividerIndent,
+	  this.physics = const NeverScrollableScrollPhysics(),
   }) : super(key: key);
 
   @override
@@ -238,7 +240,7 @@ class ListViewSeparated extends StatelessWidget {
     return ListView.separated(
 	    controller: controller,
 	    shrinkWrap: true,
-	    physics: NeverScrollableScrollPhysics(),
+	    physics: physics,
 	    itemBuilder: itemBuilder,
 	    separatorBuilder: (BuildContext context, int index) {
 		    return separator;
