@@ -185,6 +185,7 @@ class ContainerBoxDecorationSeparated extends StatelessWidget {
   final int itemCount;
   final ScrollController controller;
   final Widget separator;
+  final ScrollPhysics physics;
 
 	const ContainerBoxDecorationSeparated({
 		Key key,
@@ -193,6 +194,7 @@ class ContainerBoxDecorationSeparated extends StatelessWidget {
 		@required this.itemCount,
 		this.controller,
 		this.separator = dividerIndent,
+		this.physics,
 	}) : super(key: key);
 
 	@override
@@ -211,6 +213,7 @@ class ContainerBoxDecorationSeparated extends StatelessWidget {
 			),
 			child: ListViewSeparated(
 				controller: controller,
+				physics: physics,
 				itemBuilder: itemBuilder,
 				separator: separator,
 				itemCount: itemCount,
