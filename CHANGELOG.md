@@ -1,3 +1,7 @@
+## [1.2.0] - TODO: Add release date.
+
+* add list.
+
 ## [1.1.0] - TODO: Add release date.
 
 * add ErrorMessageView.
