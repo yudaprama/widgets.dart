@@ -47,13 +47,15 @@ Widget sliverList(Widget child) {
 		delegate: SliverChildListDelegate([
 			Material(
 				child: child,
-			)
+			),
 		]),
 	);
 }
 
 Widget sliverLoading({String text}) {
 	return SliverFillRemaining(
-		child: cupertinoLoadingIndicator(text: text),
+		child: Material(
+			child: cupertinoLoadingIndicator(text: text),
+		),
 	);
 }
