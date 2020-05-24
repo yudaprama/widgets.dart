@@ -7,12 +7,14 @@ class ContainerPaddingDivider extends StatelessWidget {
   final List<Widget> children;
   final double topMargin;
   final CrossAxisAlignment crossAxisAlignment;
+  final Color color;
 
   const ContainerPaddingDivider({
     Key key,
     @required this.children,
     this.topMargin = 20.0,
     this.crossAxisAlignment = CrossAxisAlignment.start,
+    this.color,
   }) : super(key: key);
 
   @override
@@ -24,7 +26,7 @@ class ContainerPaddingDivider extends StatelessWidget {
       margin: EdgeInsets.only(top: topMargin),
       padding: EdgeInsets.all(16.0),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: color,
         border: Border(
           bottom: BorderSide(color: dividerColor),
           top: BorderSide(color: dividerColor),
@@ -71,12 +73,14 @@ class ContainerBoxDecorationSingleChild extends StatelessWidget {
   final Widget child;
   final double topMargin;
   final EdgeInsets padding;
+  final Color color;
 
   const ContainerBoxDecorationSingleChild({
     Key key,
     @required this.child,
     this.topMargin = 20.0,
     this.padding,
+    this.color,
   }) : super(key: key);
 
   @override
@@ -88,7 +92,7 @@ class ContainerBoxDecorationSingleChild extends StatelessWidget {
       margin: EdgeInsets.only(top: topMargin),
       padding: padding,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: color,
         border: Border(
           bottom: BorderSide(color: dividerColor),
           top: BorderSide(color: dividerColor),
