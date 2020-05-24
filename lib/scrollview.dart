@@ -42,7 +42,7 @@ class CupertinoScrollView extends StatelessWidget {
   }
 }
 
-Widget sliverList({Widget child}) {
+Widget sliverList(Widget child) {
 	return SliverList(
 		delegate: SliverChildListDelegate([
 			Material(
