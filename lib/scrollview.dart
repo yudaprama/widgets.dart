@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:widgets/loading.dart';
 
 class CupertinoScrollView extends StatelessWidget {
   final Widget child;
@@ -34,15 +35,25 @@ class CupertinoScrollView extends StatelessWidget {
 					    trailing: trailing,
 				    ),
 			    ),
-			    SliverList(
-				    delegate: SliverChildListDelegate([
-					    Material(
-						    child: child,
-					    )
-				    ]),
-			    ),
+			    child,
 		    ],
 	    ),
     );
   }
+}
+
+Widget sliverList({Widget child}) {
+	return SliverList(
+		delegate: SliverChildListDelegate([
+			Material(
+				child: child,
+			)
+		]),
+	);
+}
+
+Widget sliverLoading({String text}) {
+	return SliverFillRemaining(
+		child: cupertinoLoadingIndicator(text: text),
+	);
 }
