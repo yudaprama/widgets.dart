@@ -1,3 +1,7 @@
+## [1.3.0] - TODO: Add release date.
+
+* add chevronRight.
+
 ## [1.2.3] - TODO: Add release date.
 
 * add chevronRight.
