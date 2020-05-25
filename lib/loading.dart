@@ -11,7 +11,6 @@ void showLoading(BuildContext context) {
         onWillPop: () {},
         child: Dialog(
           child: Container(
-            color: Colors.white,
             height: 50,
             child: cupertinoLoadingIndicator(),
           ),
